@@ -9,8 +9,8 @@
 
 </head>
 <body>
-<div id="body" class="container">
-    <div class="navbar span12" style="margin:0 0 0 0">
+<div id="body" class="container" >
+    <div class="navbar span11" style="margin:0 0 0 0;height:100%">
         <div class="navbar-inner">
             <a class="brand" href="#">Title</a>
             <ul class="nav">
@@ -21,16 +21,28 @@
 
         </div>
     </div>
-    <iframe src="firstpage.html" style="width:100%;height:1650px;border:0px" id="main"></iframe>
+
+    <iframe src="firstpage.html" style="width:100%;border:0px" id="main"></iframe>
 
 
 </div>
-   <script>
-       function openNews(){
-             var frame = document.getElementById("main");
-            frame.src="news.html";
-       }
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+    window.onload=function(){
+    var frame = document.getElementById('main');
+    frame.height = frame.contentWindow.document.documentElement.scrollHeight;
+    $(window).resize(function(){
+        $('#main').height = $('#main')[0].contentWindow.document.documentElement.scrollHeight;
+        console.log('111');
 
-   </script>
+    })
+    }
+    function openNews(){
+    var frame = document.getElementById("main");
+    frame.src="news.html";
+    }
+
+</script>
 </body>
 </html>

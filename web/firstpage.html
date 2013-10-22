@@ -8,7 +8,7 @@
     <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
 </head>
 <body>
-<div class="hero-unit span12" style="padding-top:10px">
+<div class="hero-unit span12" style="padding-top:10px;margin-left:0px;margin-bottom:3px">
     <h3>Hello, World</h3>
 
     <div id="myCarousel" class="carousel slide span7" style="float:left">
@@ -16,58 +16,60 @@
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+        </ol>
         <div class="carousel-inner">
             <div class="active item"><img d src="img/1.jpg" class="img-polaroid"></div>
             <div class="item"><img d src="img/1_1.jpg" class="img-polaroid"></div>
             <div class="item"><img d src="img/1_2.jpg" class="img-polaroid"></div>
-            </div>
+        </div>
         <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
         <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-        </div>
+    </div>
 
 
+    <div class="span4" style="float:right">
+        <p>Batman vs Spider man</p>
 
-<div class="span4" style="float:right">
-    <p>Batman vs Spider man</p>
-
-    <p><a href="#" class="btn btn-primary btn-large" id="learnMoreBtn">Learn more</a></p>
+        <p><a href="#" class="btn btn-primary btn-large" id="learnMoreBtn">Learn more</a></p>
+    </div>
 </div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <ul class="thumbnails">
+            <li class="span4">
+                <div class="thumbnail">
+                    <img src="img/4.jpg" class="img-rounded">
+
+                    <h3>afdsssssssssss</h3>
+
+                    <p>adffasdfadfadsfadfadfasdf</p>
+
+                </div>
+            <li class="span4">
+                <div class="thumbnail">
+                    <img src="img/2.jpg" class="img-rounded">
+
+                    <h3>afdsssssssssss</h3>
+
+                    <p>adffasdfadfadsfadfadfasdf</p>
+
+                </div>
+            <li class="span4">
+                <div class="thumbnail">
+                    <img d src="img/3.jpg" class="img-rounded">
+
+                    <h3>3333333333333</h3>
+
+                    <p>adffasdfadfadsfadfadfasdf</p>
+
+                </div>
+
+            </li>
+        </ul>
+    </div>
 </div>
-<ul class="thumbnails">
-    <li class="span4">
-        <div class="thumbnail">
-            <img src="img/4.jpg" class="img-rounded">
 
-            <h3>afdsssssssssss</h3>
 
-            <p>adffasdfadfadsfadfadfasdf</p>
-
-        </div>
-    <li class="span4">
-        <div class="thumbnail">
-            <img  src="img/2.jpg" class="img-rounded">
-
-            <h3>afdsssssssssss</h3>
-
-            <p>adffasdfadfadsfadfadfasdf</p>
-
-        </div>
-    <li class="span4">
-        <div class="thumbnail">
-            <img d src="img/3.jpg" class="img-rounded">
-
-            <h3>3333333333333</h3>
-
-            <p>adffasdfadfadsfadfadfasdf</p>
-
-        </div>
-
-    </li>
-</ul>
-
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
 <script>
     $("#learnMoreBtn").click( function(){
     jQuery.get("http://zhaolo-w7-64:8081/model/test",null,function(data, status){
